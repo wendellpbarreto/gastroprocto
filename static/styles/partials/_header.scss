@@ -1,0 +1,22 @@
+#header {
+    width: 80%;
+    float: right;
+    min-height: 50px;
+    background-color: $clouds;
+    border-bottom: 1px solid $wet-asphalt;
+
+    header {
+        a {
+            line-height: rem-calc(50);
+            color: $midnight-blue;
+            font-size: rem-calc(20);
+            padding-left: 10px;
+            padding-right: 10px;
+            border-left: 1px solid $wet-asphalt;
+            display: block;
+            width: 50px;
+            float: right;
+            text-align: center;
+        }
+    }
+}

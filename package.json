@@ -1,0 +1,49 @@
+{
+  "name": "gastroprocto",
+  "version": "0.1.0",
+  "description": "Gastroprocto Hospital Dia Website",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wendellpbarreto/gastroprocto.git"
+  },
+  "keywords": [
+    "gastro",
+    "procto",
+    "gastroprocto",
+    "gastroproctologia",
+    "gastrologia",
+    "proctologia",
+    "hospital",
+    "urgência",
+    "vesicula",
+    "apêndicite",
+    "natal",
+    "rio",
+    "grande",
+    "do",
+    "norte",
+    "gutembergh",
+    "doutor",
+    "medico"
+  ],
+  "author": "Betacast",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wendellpbarreto/gastroprocto/issues"
+  },
+  "homepage": "https://github.com/wendellpbarreto/gastroprocto",
+  "dependencies": {
+    "bower": "^1.3.8",
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^0.8.2",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

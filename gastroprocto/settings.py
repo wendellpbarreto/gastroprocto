@@ -18,8 +18,8 @@ SECRET_KEY = '5%h*z4aro&n7wc!(a6qx(qd7402i#_s_0ina8@4xzw5wo_@f^4'
 DB_PASS = 't1IUilS14,747we'
 
 # Global name to project
-PROJECT_NAME = 'gastoprocto'
-PROJECT_NAME_READABLE = 'Gastro Procto'
+PROJECT_NAME = 'gastroprocto'
+PROJECT_NAME_READABLE = 'Gastroprocto'
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -47,8 +47,6 @@ INSTALLED_APPS = (
     'grappelli',
     'redactor',
     'sorl.thumbnail',
-    'rest_framework',
-    'djangular',
 
     'django.contrib.admin',
     'django.contrib.auth',

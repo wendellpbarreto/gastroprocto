@@ -1,0 +1,50 @@
+#container {
+    width: 80%;
+    float:right;
+
+    .content {
+
+        section {
+            min-height: 550px;
+
+            &:nth-child(even) {
+                background-color: $white;
+            }
+
+            header {
+                padding-top: 200px;
+            }
+
+            .widget {
+                padding-top: 125px;
+
+                i {
+                    @include border-radius(100%);
+                    height: 300px;
+                    width: 300px;
+                    line-height: 300px;
+                    text-align: center;
+                    color: $clouds;
+                    font-size: 150px;
+                    display: inline-block;
+                }
+
+                &.facebook i {
+                    background-color: $facebook;
+                }
+
+                &.how-to-buy i {
+                    background-color: $midnight-blue;
+                }
+
+                &.become-member i {
+                    background-color: $alizarim;
+                }
+
+                &.become-partner i {
+                    background-color: $silver;
+                }
+            }
+        }
+    }
+}

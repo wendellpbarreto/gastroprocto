@@ -1,0 +1,35 @@
+{
+  "name": "gastroprocto",
+  "version": "0.1.0",
+  "homepage": "https://github.com/wendellpbarreto/gastroprocto",
+  "authors": [
+    "Betacast"
+  ],
+  "description": "Gastroprocto Hospital Dia Website",
+  "main": "gruntfile.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "gastro",
+    "procto",
+    "gastroprocto",
+    "gastroproctologia",
+    "gastrologia",
+    "proctologia",
+    "hospital",
+    "urgência",
+    "vesicula",
+    "apêndicite",
+    "natal",
+    "rio",
+    "grande",
+    "do",
+    "norte",
+    "gutembergh",
+    "doutor",
+    "medico"
+  ],
+  "license": "MIT",
+  "private": true
+}
