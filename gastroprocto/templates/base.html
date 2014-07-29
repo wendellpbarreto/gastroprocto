@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- title -->
+        <title>{% block title %} {% endblock %}</title>
+        <!-- shortcut icon -->
+        <link rel="shortcut icon" href="{{ STATIC_URL }}images/favicon.png">
+        <!-- meta tags -->
+        <meta name="author" content="Wendell P. Barreto (wendellp.barreto@gmail.com)">
+        <meta name="description" content="Srovício website">
+        <meta name="keywords" content="srovicio, srovício, silkroad, silk, compra, compras, venda, vendas,
+            kleison, freitas, site, website, ecommerce, gastroprocto, natal, rn, rio, grande, do, norte, joymax,
+            brothersro, jogo, jogos, server, servers, servidor, servidores">
+        <!-- facebook tags -->
+        <meta property="og:url" content="srovicio.com.br">
+        <meta property="og:site_name" content="Srovício">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Srovício">
+        <meta property="og:image" content="{{ STATIC_URL }}images/logo.png">
+        <meta property="og:description" content="Srovício website">
+        <!-- pacejs -->
+        <script src="{{ STATIC_URL }}bower_components/pace/pace.js"></script>
+        <link rel="stylesheet" href="{{ STATIC_URL }}bower_components/pace/themes/pace-theme-flash.css">
+        <!-- modrnizr -->
+        <script src="{{ STATIC_URL }}bower_components/modernizr/modernizr.js"></script>
+        <!-- styles -->
+        <link rel="stylesheet" href="{{ STATIC_URL }}styles/app.css">
+        <link rel="stylesheet" href="{{ STATIC_URL }}fonts/opensans.css">
+        <link rel="stylesheet" href="{{ STATIC_URL }}fonts/icomoon.css">
+        <link rel="stylesheet" href="{{ STATIC_URL }}vendor/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="{{ STATIC_URL }}vendor/owl-carousel/owl.theme.css">
+        <link rel="stylesheet" href="{{ STATIC_URL }}vendor/owl-carousel/owl.transitions.css">
+    </head>
+    <body>
+    <!-- -  -   -    -     -      -      -       -        -        Menu -->
+    {% block menu %} {% endblock %}
+
+    <!-- -  -   -    -     -      -      -       -        -        Header -->
+    {% block header %} {% endblock %}
+
+    <!-- -  -   -    -     -      -      -       -        -        Container -->
+    {% block container %} {% endblock %}
+
+    <!-- -  -   -    -     -      -      -       -        -        Footer -->
+    {% block footer %} {% endblock %}
+
+    <script src="{{ STATIC_URL }}bower_components/jquery/dist/jquery.js"></script>
+    <script src="{{ STATIC_URL }}bower_components/foundation/js/foundation.min.js"></script>
+    <script src="{{ STATIC_URL }}js/vendor/flexslider.min.js"></script>
+    <script src="{{ STATIC_URL }}js/app.js"></script>
+
+    <!-- -  -   -    -     -      -      -       -        -        Javascripts:utils -->
+    {% block js %} {% endblock %}
+    </body>
+</html>

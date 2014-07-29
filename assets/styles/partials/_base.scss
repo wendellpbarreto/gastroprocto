@@ -1,0 +1,30 @@
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+body {
+    background-color: $clouds;
+
+    word-wrap: break-word;
+
+    -webkit-font-smoothing: antialiased;
+       -moz-font-smoothing: antialiased;
+        -ms-font-smoothing: antialiased;
+            font-smoothing: antialiased;
+
+    h1, h2, h3, h4, h5, h6 {
+    }
+
+    h5, h6 {
+        font-weight: 700;
+    }
+
+    a {
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+}

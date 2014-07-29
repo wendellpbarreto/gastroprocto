@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    {% include "partials/header.html" %}
+{% endblock %}
+
+{% block menu %}
+    {% include "partials/menu.html" %}
+{% endblock %}
+
+{% block container %}
+    <div id="container">
+        <div class="content row">
+            {% for server in servers %}
+                <a href="/server/{{ server.pk }}">{{ server.name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/footer.html" %}
+{% endblock %}

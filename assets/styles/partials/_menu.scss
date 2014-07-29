@@ -1,0 +1,38 @@
+#menu {
+    padding-top:50px;
+    width: 20%;
+    float:left;
+    height: 100%;
+    position: fixed;
+    background-color: $midnight-blue;
+
+    ul {
+        li {
+            width: 100%;
+
+            a {
+                padding: 15px 10px;
+                display: block;
+                font-size: 0.9rem;
+                color: $clouds;
+                font-weight: 600;
+                border-left: 10px solid transparent;
+
+                &:hover {
+                    background-color: $wet-asphalt;
+                }
+
+                &.active {
+                    border-color: $alizarim;
+                    background-color: $dark-midnight-blue;
+                }
+
+                i.chevron {
+                    line-height: 1.6rem;
+                    float: right;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}
