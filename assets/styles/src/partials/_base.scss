@@ -1,0 +1,71 @@
+/*
+ *
+ * Font weights
+ * -------------------------------------- */
+$thin: 100;
+$light: 300;
+$normal: 400;
+$medium: 500;
+$bold: 700;
+$ultrabold: 900;
+
+body {
+    word-wrap: break-word;
+    font-smoothing: antialiased;
+
+    a {
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+#header {
+    background-color: $white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .logo-wrapper {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        .logo-crop {
+        }
+    }
+    .navbar {
+        text-align: right;
+        margin: 0;
+        padding: 0;
+        .navbar-item {
+            color: $gray;
+            display: inline-block;
+            padding-left: 10px;
+            padding-right: 10px;
+            line-height: 58px;
+            font-size: 14px;
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+}
+
+#hero {
+    margin-top: 82px;
+    .carousel {
+        .carousel-item {
+        }
+    }
+}
+
+#main {
+    section.info-top-wrapper {
+        position: relative;
+        .info-top {
+            position: absolute;
+            z-index: 10;
+            margin-top: -20px;
+            background-color: $peter-river;
+            height: 100px;
+            width: 100%;
+        }
+    }
+}

@@ -11,73 +11,30 @@
 {% endblock %}
 
 {% block container %}
-    <div id="container">
-        <div class="banner row">
-            <ul class="slides">
-                {% for banner in banners %}
-                    <li>
-                        {% thumbnail banner.image "1920x720" crop="center" as im %}
-                            <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}">
-                        {% endthumbnail %}
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
-        <div class="content">
-            <section class="row">
-                <header class="large-7 large-offset-3 columns">
-                    <h4>
-                        <a href="https://www.facebook.com/groups/355089967892219/" target="_blank">Participe do nosso grupo no facebook</a>
-                    </h4>
-                    <p>
-                        Com cerca de 3.000 membros, o grupo do Srovício no facebook é um ótimo lugar para conversar e fazer novos amigos. <a href="https://www.facebook.com/groups/355089967892219/" target="_blank">Venha conferir!</a>
-                    </p>
-                </header>
-                <a class="widget facebook text-right large-6 large-offset-1 large-uncentered columns">
-                    <i class="icon-facebook"></i>
-                </a>
-            </section>
-            <section class="row">
-                <a class="widget how-to-buy large-6 large-offset-3 columns">
-                    <i class="icon-shopping-cart"></i>
-                </a>
-                <header class="large-7 large-offset-1 large-uncentered columns">
-                    <h4>
-                        <a href="/how-to-buy">Ainda não sabe como comprar no Srovício?</a>
-                    </h4>
-                    <p>
-                        Com cerca de 3.000 membros, o grupo do Srovício no facebook é um ótimo lugar para conversar e fazer novos amigos. <a href="/how-to-buy"></a>
-                    </p>
-                </header>
-            </section>
-            <section class="row">
-                <header class="large-7 large-offset-3 columns">
-                    <h4>
-                        <a href="#">Traga o seu servidor pro Srovício hoje!</a>
-                    </h4>
-                    <p>
-                         <a href=""></a>
-                    </p>
-                </header>
-                <a class="widget become-member text-right large-6 large-offset-1 large-uncentered columns">
-                    <i class="icon-rocket"></i>
-                </a>
-            </section>
-            <section class="row">
-                <a class="widget become-partner large-6 large-offset-3 columns">
-                    <i class="icon-group"></i>
-                </a>
-                <header class="large-7 large-offset-1 large-uncentered columns">
-                    <h4>
-                        <a href="/how-to-buy">Você também pode se tornar um parceiro nosso</a>
-                    </h4>
-                    <p>
-                        Com cerca de 3.000 membros, o grupo do Srovício no facebook é um ótimo lugar para conversar e fazer novos amigos. <a href="https://www.facebook.com/groups/355089967892219/" target="_blank">Venha conferir!</a>
-                    </p>
-                </header>
-            </section>
-        </div>
-    </div>
+    <div id="hero">
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="{{ STATIC_URL }}images/banner/0.jpg" alt="" />
+            </div><!-- div class='carousel-item' -->
+        </div><!-- div class='carousel' -->
+    </div><!-- div id='hero' -->
+
+    <div id="main">
+        <section class="info-top-wrapper row">
+            <div class="info-top">
+
+            </div><!-- div class='info-top' -->
+        </section><!-- section class='info-top' -->
+        <section class="links">
+
+        </section><!-- section class='links' -->
+        <section class="tips">
+
+        </section><!-- section class='tips' -->
+        <section class="staff">
+
+        </section><!-- section class='staff' -->
+    </div><!-- div id='main' -->
 {% endblock %}
 
 {% block footer %}

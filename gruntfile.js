@@ -48,7 +48,7 @@ module.exports = function (grunt) {
           style: 'expanded'
         },
         files: {
-          'assets/styles/main.css':  'assets/styles/main.scss',
+          'assets/styles/main.css':  'assets/styles/src/main.scss',
         }
       }
     },
@@ -61,6 +61,16 @@ module.exports = function (grunt) {
         src: 'assets/styles/main.css',
         dest: 'assets/styles/main.css'
       },
+    },
+
+    connect: {
+      all: {
+        options:{
+          port: 9000,
+          hostname: "localhost",
+          open: true,
+        }
+      }
     },
 
     watch: {
@@ -76,15 +86,22 @@ module.exports = function (grunt) {
         files: 'assets/scripts/src/**/*.js',
         tasks: ['concat', 'uglify'],
       },
+      all: {
+        files: ['assets/styles/*.css', 'assets/scripts/**/*.{min.js, js}', 'images/**/*.{png,jpg,jpeg,gif}', '*.html'],
+        options: {
+          livereload: true,
+        },
+      },
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-autoprefixer');
 
-  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'sass', 'autoprefixer', 'watch']);
+  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'autoprefixer', 'watch']);
 };
