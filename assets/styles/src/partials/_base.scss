@@ -18,12 +18,25 @@ body {
     }
 }
 
+.header {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+    .header__title {
+        
+    }
+    .header__subtitle {
+
+    }
+}
+
 #header {
     background-color: $white;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0);
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
     .logo-wrapper {
         padding-top: 12px;
         padding-bottom: 12px;
@@ -51,21 +64,46 @@ body {
 #hero {
     margin-top: 82px;
     .carousel {
+        z-index: -1;
         .carousel-item {
         }
     }
 }
 
 #main {
-    section.info-top-wrapper {
-        position: relative;
-        .info-top {
-            position: absolute;
-            z-index: 10;
-            margin-top: -20px;
-            background-color: $peter-river;
-            height: 100px;
-            width: 100%;
+    margin-top: -50px;
+    section.gastroprocto {
+        border-radius: 0.3%;
+        background-color: $green;
+        color: $white;
+        .gastroprocto__wrapper{
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        .gastroprocto__title{
+        }
+        .gastroprocto__content{
+        }
+    }
+    section.services {
+        .service__item{
+            margin-bottom: 25px;
+            text-align: center;
+            .service__crop img {
+                border-radius: 50%;
+            }
+            .service__header-title {
+                text-transform: uppercase;
+            }
+        }
+    }
+    section.insurance {
+        .insurance__carousel-item{
+            padding-left: 15px;
+            padding-right: 15px;
+            .insurance__crop {
+                
+            }
         }
     }
 }

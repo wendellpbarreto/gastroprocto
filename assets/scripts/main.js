@@ -1,6 +1,3 @@
-$(document).foundation();
-
-
 (function() {
     var clickable = {
         elements: document.querySelectorAll('[data-href]'),
@@ -32,7 +29,7 @@ $(document).foundation();
     };
 
     clickable.init();
-})();
+})();;$(document).foundation();
 
 ;( function( window ) {
 
@@ -173,5 +170,12 @@ $(document).ready(function(){
     // nav: true,
     // dots: true,
     // autoplay: true,
+  });
+  $(".insurance__carousel").owlCarousel({
+    items: 4,
+    lopp: true,
+    //nav: true,
+    dots: true,
+    autoplay: true,
   });
 });
